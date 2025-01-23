@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Qureshi Designs</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.css" />
+    <link href="styles/common.css" rel="stylesheet" rel="stylesheet">
+    <link href="styles/responsive.css" rel="stylesheet" rel="stylesheet">
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js"></script>
+    <script>
+        // var clean_uri = location.protocol + "//" + location.host + location.pathname;
+        // window.history.replaceState({}, document.title, clean_uri);
+
+        if ($(window).width() > 1023) {
+            (function($){
+                $(window).on("load",function(){
+                    $(".mcs-horizontal-example").mCustomScrollbar({axis:"x", theme: 'dark-3', scrollButtons:{enable:true}, mouseWheelPixels: 250, autoHideScrollbar: false, contentTouchScroll: true});
+                });
+            })(jQuery);
+        }
+
+    </script></head>
+<body>
+
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+    
+    <div id="home" class="home page" style="--clr:#97963e;" onMouseDown="return false">
+        <div class="main-links position-absolute w-100 h-100">
+            <div class="link design-link"><a href="designs.html" class="position-relative">Designs</a></div>
+            <div class="link social-link">
+               <ul class="nav p-0">
+                    <li><a href="#" target="_blank"><img src="//www.butterconcepts.com/images/linkedin-icon.png" alt="LinkedIn" class=""></a></li>
+                    <li><a href="#" target="_blank"><img src="//www.butterconcepts.com/images/insta-icon.png" alt="Instagram" class=""></a></li>
+                    <li><a href="#" target="_blank"><img src="//www.butterconcepts.com/images/yt-icon.png" alt="YouTube" class=""></a></li>
+                    <li><a href="#" target="_blank"><img src="//www.butterconcepts.com/images/mail-icon.png" alt="Email" class=""></a></li>
+               </ul>
+            </div>
+            <div class="link about-link"><a href="about.html">About</a></div>
+        </div>
+    
+        <div class="dot-pattern"></div>
+    
+        <div class="width d-flex align-items-center position-relative">
+            <div class="title text-uppercase animate__animated animate__fadeInRight animate__delay-1s" style="--clr:white;">the<br>qureshi<br>design <br> company.<a href="#" class="stretched-link"><!----></a></div>
+            <div class="pics rounded-circle">
+                <div id="carouselCrossfade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="1500"><img src="/assets/img/1.png" class="d-block w-100 rounded-circle" style="border-radius: 999px;" alt="Butter Concepts" loading="lazy"></div>
+                        <div class="carousel-item" data-bs-interval="1500"><img src="/assets/img/2.png" class="d-block w-100 rounded-circle" alt="Qureshi Designs" loading="lazy"></div>
+                        <div class="carousel-item" data-bs-interval="1500"><img src="/assets/img/3.png" class="d-block w-100 rounded-circle" alt="Qureshi Designs" loading="lazy"></div>
+                        <div class="carousel-item" data-bs-interval="1500"><img src="/assets/img/4.png" class="d-block w-100 rounded-circle" alt="Qureshi Designs" loading="lazy"></div>
+                        <div class="carousel-item" data-bs-interval="1500"><img src="/assets/img/5.png" class="d-block w-100 rounded-circle" alt="Qureshi Designs" loading="lazy"></div>
+                        <div class="carousel-item" data-bs-interval="1500"><img src="/assets/img/6.png" class="d-block w-100 rounded-circle" alt="Qureshi Designs" loading="lazy"></div>
+                        <div class="carousel-item" data-bs-interval="1500"><img src="/assets/img/7.png" class="d-block w-100 rounded-circle" alt="Qureshi Designs" loading="lazy"></div>
+                        <div class="carousel-item" data-bs-interval="1500"><img src="/assets/img/8.png" class="d-block w-100 rounded-circle" alt="Qureshi Designs" loading="lazy"></div>
+                        <div class="carousel-item" data-bs-interval="1500"><img src="/assets/img/9.png" class="d-block w-100 rounded-circle" alt="Qureshi Designs" loading="lazy"></div>
+                    </div>
+                </div>
+                <a href="designs.html" class="stretched-link"><!----></a>
+            </div>
+        </div>
+        <div class="logo"><img src="assets/img/logo2.png" alt="Logo" class="img-fluid" loading="lazy"></div>
+    </div>
+
+
+    <!-- designs -->
+    
+    
+    <script src="common.js"></script>
+
+    <!-- <script>
+        $(document).ready(function(){
+            resizeHome();
+        });
+
+        function resizeHome(){
+            var vTitleWidth = $('.width .title').width();
+            var vLogoWidth = $('.logo').width();
+            var vTotalWidth = vTitleWidth + vLogoWidth - 45;
+
+            $('.width').css({'width': vTotalWidth + 'px'});
+        }
+
+        $(window).resize(function () {
+            resizeHome();
+        });
+    </script> -->
+  
+</body>
+</html>

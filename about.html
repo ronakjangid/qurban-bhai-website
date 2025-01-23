@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About » Qureshi Designs</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.css" />
+    <link href="styles/common.css" rel="stylesheet" rel="stylesheet">
+    <link href="styles/responsive.css" rel="stylesheet" rel="stylesheet">
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js"></script>
+    <script>
+        // var clean_uri = location.protocol + "//" + location.host + location.pathname;
+        // window.history.replaceState({}, document.title, clean_uri);
+
+        if ($(window).width() > 1023) {
+            (function($){
+                $(window).on("load",function(){
+                    $(".mcs-horizontal-example").mCustomScrollbar({axis:"x", theme: 'dark-3', scrollButtons:{enable:true}, mouseWheelPixels: 250, autoHideScrollbar: false, contentTouchScroll: true});
+                });
+            })(jQuery);
+        }
+    </script></head>
+<body>
+
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+    
+    <div id="about" class="page about-page d-block d-lg-flex align-items-center" style="--clr:#282830;" onMouseDown="return false">
+        <div class="nav">
+            <div class="left-logo"><a href="index.html"><img src="assets/img/logo.png" alt="Logo" class="img-fluid" loading="lazy"></a></div>
+            <a href="index.html" class="back-btn">Back</a>
+        </div>
+            <div class="container-fluid h-100 p-0">
+                <div class="d-flex h-100">
+                    <div class="about-block d-flex align-items-center">
+                        <div class="mcs-horizontal-example">
+                            <div class="d-block d-lg-flex align-items-center content-area">
+                                <div class="scroll">Scroll to Continue <span></span></div>
+                                <img src="//www.butterconcepts.com/images/dot-pattern1.png" alt="" class="img-fluid about-pattern d-none d-lg-block">
+                                <div class="text-block position-relative">
+                                    <h1>We create
+                                        <span class="d-block" style="margin-left: clamp(3.125rem, 2.1875rem + 4.6875vw, 7.8125rem);">that</span>
+                                        <span class="d-block" style="margin-left: clamp(1.875rem, 0.9375rem + 4.6875vw, 6.5625rem);">Experiences</span>
+                                    </h1>
+                                </div>
+                                <div class="d-block d-lg-flex flex-shrink-0 align-items-end">
+                                    <div class="pic-wrapper pr" style="margin-left: -2rem;">
+                                        <div class="pic1">
+                                            <img src="//www.butterconcepts.com/images/about-pic01.jpg" alt="Dharal Surelia" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="content-block pr text-white" style="width: 670px;">
+                                        <p class="mb-0">Butter Concepts is a young multi-disciplinary design studio based out of Ahmedabad who delves into Architecture, Interior Design and Visual Identity. We work on various scales starting from Architecture of residential / commercial spaces to their interiors with bespoke furniture designing. In case of commercial projects we create and weave the overall visual identity of the company in its spaces. Our design philosophy is to explore materials, palettes, forms and details while developing meaningful and efficient spaces / products.</p>
+                                    </div>
+                                </div>
+                                <div class="d-block d-lg-flex flex-shrink-0">
+                                    <div class="pic-wrapper pr">
+                                        <div class="pic1">
+                                            <img src="//www.butterconcepts.com/images/about-pic02.jpg" alt="Dharal Surelia" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="content-block pr d-flex flex-column text-white" style="width: 800px;">
+                                        <p>Dharal Surelia is the Founder and Principal Architect at Butter Concepts. An architect, designer and an artist based in India. Passionate about all forms of Art & Design be it spaces, products, philosophies or experiences. A fresh Graduate from Babson College with a Masters of Science in Entrepreneurial Leadership and CEPT University with a Bachelors in Architecture. In the pursuit of fusing the domains of design and entrepreneurship.</p>
+                                        <p class="mb-0"><a href="mailto:dharal@butterconcepts.com" class="text-decoration-none text-white fwBold">dharal@butterconcepts.com</a></p>
+                                    </div>
+                                </div>
+                                <div class="next-project d-flex align-items-center flex-shrink-0" style="--clr:#006664;">
+                                    <div class="project-title">
+                                        <small class="d-block mb-3">Explore Projects</small>
+                                        <span class="text-uppercase d-flex align-items-center">Designs <img src="//www.butterconcepts.com/images/arrow-circle.png" alt="" class="img-fluid ms-auto"></span>
+                                        <a href="designs.html" class="stretched-link"><!----></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="common.js"></script>
+    <script>
+        $(document).ready(function(){
+            setTimeout(function() {
+                $('.about-page').addClass('target');
+            }, 500);
+        });
+    </script>
+</body>
+</html>

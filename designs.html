@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Qureshi Designs</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.css" />
+    <link href="styles/common.css" rel="stylesheet" rel="stylesheet">
+    <link href="/styles/responsive.css" rel="stylesheet" rel="stylesheet">
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js"></script>
+    <script>
+        // var clean_uri = location.protocol + "//" + location.host + location.pathname;
+        // window.history.replaceState({}, document.title, clean_uri);
+
+        if ($(window).width() > 1023) {
+            (function($){
+                $(window).on("load",function(){
+                    $(".mcs-horizontal-example").mCustomScrollbar({axis:"x", theme: 'dark-3', scrollButtons:{enable:true}, mouseWheelPixels: 250, autoHideScrollbar: false, contentTouchScroll: true});
+                });
+            })(jQuery);
+        }
+
+    </script></head>
+<body>
+
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+    <div id="designs" class="designs page" style="--clr:#006664;" onMouseDown="return false">
+
+        <div class="left-logo"><a href="index.html"><img src="assets/img/logo.png" alt="Logo" class="img-fluid" loading="lazy"></a></div>
+        <a href="index.html" class="back-btn">Back</a>
+
+        <div class="width d-flex align-items-center h-100">
+            <div class="title text-uppercase animate__animated animate__fadeIn animate__delay-1s" style="--clr:white;">Designs</div>
+            <div class="circles">
+                <div class="circle">
+                    <a href="designs/elite.html"><img src="assets/img/1.png" alt="elite" loading="lazy"></a>
+                    <div class="design-name-details ms-4">
+                        <h2 class="text-uppercase">Elite Magnum<small class="d-block text-lowercase"> <!--some text  --></small></h2>
+                    </div>
+                </div>
+                <div class="circle">
+                    <a href="designs/desoto.html"><img src="assets/img/2.png" alt="Soto" loading="lazy"></a>
+                    <div class="design-name-details ms-4">
+                        <h2 class="text-uppercase">De Soto<small class="d-block text-lowercase"> <!--some text  --></small></h2>
+                    </div>
+                </div>
+                <div class="circle">
+                    <a href="designs/theka.html"><img src="assets/img/3.png" alt="Theka" loading="lazy"></a>
+                    <div class="design-name-details ms-4">
+                        <h2 class="text-uppercase">Theka<small class="d-block text-lowercase">Maninagar, Ahmedabad</small></h2>
+                    </div>
+                </div>
+                <div class="circle">
+                    <a href="designs/bhavin.html"><img src="assets/img/4.png" alt="Theka" loading="lazy"></a>
+                    <div class="design-name-details ms-4">
+                        <h2 class="text-uppercase">Bhavinbhai's House<small class="d-block text-lowercase"> <!--some text  --></small></h2>
+                    </div>
+                </div>
+                <div class="circle">
+                    <a href="designs/avhouse.html"><img src="assets/img/5.png" alt="Theka" loading="lazy"></a>
+                    <div class="design-name-details ms-4">
+                        <h2 class="text-uppercase">A V House<small class="d-block text-lowercase"> <!--some text  --></small></h2>
+                    </div>
+                </div>
+                <div class="circle">
+                    <a href="designs/blooming.html"><img src="assets/img/6.png" alt="Theka" loading="lazy"></a>
+                    <div class="design-name-details ms-4">
+                        <h2 class="text-uppercase">Blooming Wellness<small class="d-block text-lowercase"> <!--some text  --></small></h2>
+                    </div>
+                </div>
+                <div class="circle">
+                    <a href="designs/zariwala.html"><img src="assets/img/7.png" alt="Theka" loading="lazy"></a>
+                    <div class="design-name-details ms-4">
+                        <h2 class="text-uppercase">Zariwala House<small class="d-block text-lowercase"> <!--some text  --></small></h2>
+                    </div>
+                </div>
+                <div class="circle">
+                    <a href="designs/nakshatra.html"><img src="assets/img/8.png" alt="Theka" loading="lazy"></a>
+                    <div class="design-name-details ms-4">
+                        <h2 class="text-uppercase">Nakshatra Rise<small class="d-block text-lowercase"> <!--some text  --></small></h2>
+                    </div>
+                </div>
+
+                <!-- <div class="circle">
+                    <a href="#"><img src="assets/img/9.png" alt="Theka" loading="lazy"></a>
+                    <div class="design-name-details ms-4">
+                        <h2 class="text-uppercase">Phone Wale<small class="d-block text-lowercase"> </small></h2>
+                    </div>
+                </div> -->
+        </div>
+    </div>
+
+    <!-- designs -->
+    
+    <script src="common.js"></script>
+    <script>
+        $(document).ready(function(){
+            setTimeout(function() {
+                $('.designs').addClass('target');
+            }, 500);
+        });
+    </script>
+</body>
+</html>
